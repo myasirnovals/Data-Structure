@@ -1,0 +1,3 @@
+H:/Documents/materi-pembelajaran/Data-Structure/kuliah/CLang/ADTStack/cmake-build-debug/CMakeFiles/ADTStack.dir
+H:/Documents/materi-pembelajaran/Data-Structure/kuliah/CLang/ADTStack/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/Documents/materi-pembelajaran/Data-Structure/kuliah/CLang/ADTStack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
