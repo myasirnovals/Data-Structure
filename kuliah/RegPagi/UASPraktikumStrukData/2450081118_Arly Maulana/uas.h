@@ -66,3 +66,4 @@ void AddFirstOrtu(listOrtu *L, addressOrtu P);
 void AddFirstAnak(addressOrtu Ort, addressAnak Anak);
 void PrintListOrtu(listOrtu L);
 void HitungKotak(kotak *K);
+void InputKotak(kotak *K);
