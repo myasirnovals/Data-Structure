@@ -1,3 +1,0 @@
-H:/Documents/materi-pembelajaran/Data-Structure/AbdulBari/latihan1/SparseMatrixandPolynomialusingLinkedList/cmake-build-debug/CMakeFiles/SparseMatrixandPolynomialusingLinkedList.dir
-H:/Documents/materi-pembelajaran/Data-Structure/AbdulBari/latihan1/SparseMatrixandPolynomialusingLinkedList/cmake-build-debug/CMakeFiles/edit_cache.dir
-H:/Documents/materi-pembelajaran/Data-Structure/AbdulBari/latihan1/SparseMatrixandPolynomialusingLinkedList/cmake-build-debug/CMakeFiles/rebuild_cache.dir
