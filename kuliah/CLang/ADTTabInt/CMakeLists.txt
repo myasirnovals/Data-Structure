@@ -3,4 +3,4 @@ project(ADTTabInt C)
 
 set(CMAKE_C_STANDARD 17)
 
-add_executable(ADTTabInt main.c)
+add_executable(ADTTabInt main.c TabInt.c)

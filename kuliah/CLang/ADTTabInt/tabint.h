@@ -53,16 +53,30 @@ boolean IsFull(TabInt T);
 /** { KELOMPOK Interaksi dengan I/O device, BACA/TULIS } **/
 void BacaElmt (TabInt *T);
 /* I.S : T terdefinisi, mungkin kosong
-F.S : Mengisi komponen T dengan nilai elemen tabel dari yang dibaca
+   F.S : Mengisi komponen T dengan nilai elemen tabel dari yang dibaca */
+
 void CetakTabInt(TabInt T);
 /* I.S : T terdefinisi, mungkin kosong
-   F.S : menampilkan semua elemen tabel ke layar
-*/
+   F.S : menampilkan semua elemen tabel ke layar */
+
 void AddElmt(TabInt *T, int X);
 /* I.S : T terdefinisi, mungkin kosong
    F.S : menambahkan nilai elemen baru pada tabel yang ditempatkan diposisi
-akhir. Proses penambahan dilakukan selama jumlah elemen < nMax
-*/
+   akhir. Proses penambahan dilakukan selama jumlah elemen < nMax */
+
+void DelElmt(TabInt *T, int *X);
+/* I.S : T terdefinisi, tidak kosong
+   F.S : Menghapus elemen terakhir tabel T, nilai elemen disimpan dalam X */
+
+void DelElmtX(TabInt *T, int X);
+/* I.S : T terdefinisi, mungkin kosong
+   F.S : Menghapus kemunculan pertama elemen X dari tabel T jika ada */
+
+void SisipXdiY(TabInt *T, int X, int Y);
+/* I.S : T terdefinisi, sembarang
+   F.S : Jika tabel belum penuh dan elemen Y ditemukan, nilai X disisipkan
+         tepat di sebelah kanan (setelah) elemen Y, dan nEff bertambah 1.
+         Jika tabel penuh atau Y tidak ditemukan, tabel tetap. */
 
 /** { KELOMPOK OPERASI ARITMATIKA TERHADAP TYPE } **/
 TabInt KaliTab (TabInt T1, TabInt T2);

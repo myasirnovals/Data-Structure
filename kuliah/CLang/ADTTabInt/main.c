@@ -1,4 +1,4 @@
-#include "TabInt.c"
+#include "tabint.h"
 
 int main(void)
 {
@@ -11,8 +11,8 @@ int main(void)
 
     /*selektor*/
     printf("\nJumlah elemen pada tabel : %d", GetJumElmt(MyTab));
-    printf("\nElemen pertama pada tabel : %d", GetFirstIdx(MyTab));
-    printf("\nELemen terakhir pada tabel : %d", GetLastIdx(MyTab));
+    printf("\nIndeks pertama pada tabel : %d", GetFirstIdx(MyTab));
+    printf("\nIndeks terakhir pada tabel : %d", GetLastIdx(MyTab));
 
     printf("\nMasukan index elemen yang akan di ambil : ");
     scanf("%d", &index);
@@ -72,11 +72,11 @@ int main(void)
 
     if (IsEQTab(MyTab, Tab1))
     {
-        printf("\n\n MyTab dan Tab1 memiliki jumlah elemen yang sama");
+        printf("\n\n MyTab dan Tab1 identik (ukuran dan semua elemen sama)");
     }
     else
     {
-        printf("\n\n MyTab dan Tab1 memiliki jumlah elemen berbeda");
+        printf("\n\n MyTab dan Tab1 tidak identik");
     }
 
     CreateTabInt(&TabCopy);
@@ -105,6 +105,20 @@ int main(void)
     scanf("%d", &Elm);
 
     printf("\nElemen yang di cari berada pada index ke-%d", cariElemen(MyTab, Elm));
+
+    /* Pengujian Sisip X di samping Y */
+    int valX, valY;
+    printf("\n\n--- Pengujian Sisip X di samping Y ---");
+    printf("\nTabel MyTab sebelum penyisipan: ");
+    CetakTabInt(MyTab);
+    printf("\nMasukan elemen yang ingin disisipkan (X): ");
+    scanf("%d", &valX);
+    printf("Masukan elemen acuan (Y): ");
+    scanf("%d", &valY);
+    SisipXdiY(&MyTab, valX, valY);
+    printf("Tabel MyTab setelah penyisipan: ");
+    CetakTabInt(MyTab);
+    printf("\n");
 
     return 0;
 }
